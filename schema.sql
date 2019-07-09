@@ -8,7 +8,7 @@ CREATE TABLE products
     AUTO_INCREMENT,
     product_name VARCHAR
     (100),
-    price DECIMAL
+    item_price DECIMAL
     (10,2),
     stock_quantity INTEGER,
     department_name VARCHAR
@@ -18,7 +18,7 @@ CREATE TABLE products
 );
 
     INSERT INTO products
-        (product_name, price, stock_quantity, department_name)
+        (product_name, item_price, stock_quantity, department_name)
     VALUES
         ("Camera", 70, 10, "Electronics"),
         ("Headphones", 20, 10, "Electronics"),
